@@ -80,17 +80,17 @@ public class Main {
     private static ArrayList<Point> points() {
         ArrayList<Point> POINTS = new ArrayList<>();
 
-        String coords = scanner.nextLine();
+        String cords = scanner.nextLine();
 
-        while (!coords.equals("STOP_INPUT")) {
-            if (coords.matches("(-?\\d+ -?\\d+ -?\\d+)|(-?\\d+ -?\\d+)")) {
-                String[] p = coords.split(" ");
+        while (!cords.equals("STOP_INPUT")) {
+            if (cords.matches("(-?\\d+ -?\\d+ -?\\d+)|(-?\\d+ -?\\d+)")) {
+                String[] p = cords.split(" ");
                 POINTS.add(new Point(p));
             } else {
                 System.out.println("Please, retype");
             }
 
-            coords = scanner.nextLine();
+            cords = scanner.nextLine();
         }
 
         return POINTS;

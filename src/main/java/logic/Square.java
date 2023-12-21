@@ -33,9 +33,9 @@ public class Square extends Figure {
 
     public ArrayList<Integer> lineCords(int first_point, int second_point) {
         ArrayList<Integer> coordinates = new ArrayList<>();
-        coordinates.add(dots.get(first_point).getX() - dots.get(second_point).getX());
-        coordinates.add(dots.get(first_point).getY() - dots.get(second_point).getY());
-        coordinates.add(dots.get(first_point).getZ() - dots.get(second_point).getZ());
+        coordinates.add(dots.get(first_point).getCordX() - dots.get(second_point).getCordX());
+        coordinates.add(dots.get(first_point).getCordY() - dots.get(second_point).getCordY());
+        coordinates.add(dots.get(first_point).getCordZ() - dots.get(second_point).getCordZ());
 
         return coordinates;
     }
@@ -48,9 +48,9 @@ public class Square extends Figure {
 
     public double lineLength (int first_point, int second_point) {
         return Math.sqrt(
-                calculatingCord(dots.get(first_point).getX(), dots.get(second_point).getX())
-                + calculatingCord(dots.get(first_point).getY(), dots.get(second_point).getY())
-                + calculatingCord(dots.get(first_point).getZ(), dots.get(second_point).getZ()));
+                calculatingCord(dots.get(first_point).getCordX(), dots.get(second_point).getCordX())
+                + calculatingCord(dots.get(first_point).getCordY(), dots.get(second_point).getCordY())
+                + calculatingCord(dots.get(first_point).getCordZ(), dots.get(second_point).getCordZ()));
     }
 
     public double calculatingCord (int first_cord, int second_cord) {

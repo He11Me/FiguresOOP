@@ -41,9 +41,9 @@ public class Parallelogram extends Figure {
 
     public double lineLength (int first_point, int second_point) {
         return Math.sqrt(
-                calculatingCord(dots.get(first_point).getX(), dots.get(second_point).getX())
-                + calculatingCord(dots.get(first_point).getY(), dots.get(second_point).getY())
-                + calculatingCord(dots.get(first_point).getZ(), dots.get(second_point).getZ()));
+                calculatingCord(dots.get(first_point).getCordX(), dots.get(second_point).getCordX())
+                + calculatingCord(dots.get(first_point).getCordY(), dots.get(second_point).getCordY())
+                + calculatingCord(dots.get(first_point).getCordZ(), dots.get(second_point).getCordZ()));
     }
 
     public double calculatingCord (int first_cord, int second_cord) {

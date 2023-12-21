@@ -15,21 +15,20 @@ public class Point {
         x = Integer.parseInt(cords[Consts.FIRST]);
         y = Integer.parseInt(cords[Consts.SECOND]);
 
-        if (amount == 3) {
+        if (amount == Consts.THREE) {
             z = Integer.parseInt(cords[Consts.THIRD]);
         }
-
     }
 
-    public int getX() {
+    public int getCordX() {
         return x;
     }
 
-    public int getY() {
+    public int getCordY() {
         return y;
     }
 
-    public int getZ() {
+    public int getCordZ() {
         return z;
     }
 
@@ -38,6 +37,6 @@ public class Point {
     }
 
     public boolean isEqual(Point p) {
-        return getX() == p.getX() && getY() == p.getY() && getZ() == p.getZ();
+        return getCordX() == p.getCordX() && getCordY() == p.getCordY() && getCordZ() == p.getCordZ();
     }
 }
