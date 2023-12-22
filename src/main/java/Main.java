@@ -29,7 +29,6 @@ public class Main {
             } else {
                 System.out.println("The figure is invalid");
             }
-
         }
     }
 
@@ -45,7 +44,6 @@ public class Main {
                 System.out.println("Please, retype");
                 command = scanner.nextLine();
             }
-
         }
 
         ArrayList<Point> points = points();
@@ -74,7 +72,6 @@ public class Main {
             default:
                 return new Figure();
         }
-
     }
 
     private static ArrayList<Point> points() {
@@ -89,10 +86,8 @@ public class Main {
             } else {
                 System.out.println("Please, retype");
             }
-
             cords = scanner.nextLine();
         }
-
         return POINTS;
     }
 }

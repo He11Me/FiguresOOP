@@ -55,6 +55,4 @@ public class Figure {
     public boolean isFigure() {
         return true;
     }
-
-
 }
